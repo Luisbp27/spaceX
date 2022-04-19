@@ -25,7 +25,7 @@ export function LaunchItem(launch) {
                 </Text>
             </Flex>
 
-            <Button colorScheme="purple" mt={2}>
+            <Button colorScheme={"facebook"} mt={2}>
                 More details
             </Button>
         </Box>

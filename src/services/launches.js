@@ -7,16 +7,16 @@ export const getLaunches = async () => {
         const data = await response.json();
         return data;
     } catch (error) {
-        console.log(error);
+        console.error(error);
     }
-}
+};
 
-export const getLaunch = async (flight_number) => {
+export const getLaunch = async (id) => {
     try {
-        const response = await fetch(`${API_URL}/launches/${flight_number}`);
+        const response = await fetch(`${API_URL}/launches/${id}`);
         const data = await response.json();
         return data;
     } catch (error) {
-        console.log(error);
+        console.error(error);
     }
-}
+};
