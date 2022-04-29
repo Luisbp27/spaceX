@@ -1,6 +1,10 @@
 
 const API_URL = 'https://api.spacexdata.com/v3';
 
+/**
+ * Método para obtener todos los lanzamientos
+ * @returns 
+ */
 export const getLaunches = async () => {
     try {
         const response = await fetch(`${API_URL}/launches`);
@@ -11,6 +15,11 @@ export const getLaunches = async () => {
     }
 };
 
+/**
+ * Método para obtener un lanzamiento por su id
+ * @param {*} id 
+ * @returns 
+ */
 export const getLaunch = async (id) => {
     try {
         const response = await fetch(`${API_URL}/launches/${id}`);
